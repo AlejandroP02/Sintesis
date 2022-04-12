@@ -2,14 +2,24 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-#menu-ul {
-  list-style-type: none;
-  background-color: gold;
+menu{
   padding: 0;
 }
-#menu-ul li {
-  border: 1px solid black;
+#menu ul {
+  list-style-type: none;
+  background-color: grey;
+  padding: 0;
+}
+#menu li {
   padding: 10px 15px;
   display: inline-block;
+}
+#menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+#logo{
+  padding: 0 !important;
+
 }
