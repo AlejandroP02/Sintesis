@@ -9,6 +9,7 @@ menu{
   list-style-type: none;
   background-color: grey;
   padding: 0;
+  text-align: center;
 }
 #menu li {
   padding: 10px 15px;
@@ -19,7 +20,10 @@ menu{
   font-weight: bold;
   color: white;
 }
-#logo{
-  padding: 0 !important;
 
+
+#resumen {
+  border: 2px solid black;
+  margin: 2em 5em;
+  text-align: justify;
 }
