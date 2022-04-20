@@ -5,14 +5,16 @@
 menu{
   padding: 0;
 }
+#menu {position: relative;}
 #menu ul {
   list-style-type: none;
   background-color: grey;
   padding: 0;
   text-align: center;
+  padding: 2em 4em;
 }
 #menu li {
-  padding: 10px 15px;
+  padding: 0 15px;
   display: inline-block;
 }
 #menu a {
