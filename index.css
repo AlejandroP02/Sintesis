@@ -13,18 +13,22 @@
   text-align: justify;
 }
 #fotos {
+  
   padding: 2em 5em;
 }
 #fotos img {
   max-width: 100%;
   width: 100%;
 }
+#diagram {
+  border: 10px solid white
+}
 #fotos-grid {
   display: grid;
   grid-template-columns: 1fr 1fr
 }
-#diagram {
-  border: 10px solid white
+#fotos-grid div {
+
 }
 #router1 {
   padding-right: 0.5em;
