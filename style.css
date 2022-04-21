@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: lightslategray;
+  background-color: #9b9e9e;
 }
 menu{
   padding: 0;
@@ -54,4 +54,16 @@ menu{
 #fotos-grid div < img {
   max-width: 100%;
   width: 100%;
+}
+#footer {
+  position: relative;
+  padding: 1em 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: grey;
+}
+#licencias {
+  position: absolute;
+  right: 2em;
+  bottom: 1.7em;
 }
