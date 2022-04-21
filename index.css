@@ -1,0 +1,34 @@
+
+#portada {
+  text-align: center;
+}
+#portada-img img {
+  height: 20em;
+  max-width: 100%;
+  width: 100%;
+}
+#resumen {
+  border: 2px solid black;
+  margin: 2em 5em;
+  text-align: justify;
+}
+#fotos {
+  padding: 2em 5em;
+}
+#fotos img {
+  max-width: 100%;
+  width: 100%;
+}
+#fotos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+#diagram {
+  border: 10px solid white
+}
+#router1 {
+  padding-right: 0.5em;
+}
+#router2 {
+  padding-left: 0.5em;
+}

@@ -1,0 +1,16 @@
+#footer {
+  position: relative;
+  padding: 1em 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: grey;
+  text-align: center;
+}
+#licencias {
+  position: absolute;
+  right: 1.7em;
+  bottom: 1.5em;
+}
+#correos h4 {
+  margin-bottom: 0.5em;
+}
