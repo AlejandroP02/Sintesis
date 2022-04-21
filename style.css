@@ -2,10 +2,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: lightslategray;
+}
 menu{
   padding: 0;
 }
 #menu {position: relative;}
+.logo {
+  width:3em;
+  position:absolute;
+  left:1em;
+  top:1em;
+}
 #menu ul {
   list-style-type: none;
   background-color: grey;
@@ -22,10 +31,27 @@ menu{
   font-weight: bold;
   color: white;
 }
-
-
+#portada {
+  text-align: center;
+}
+#portada-img img {
+  height: 20em;
+  max-width: 100%;
+  width: 100%;
+}
 #resumen {
   border: 2px solid black;
   margin: 2em 5em;
   text-align: justify;
+}
+#fotos {
+  padding: 2em 5em;
+}
+#fotos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+#fotos-grid div < img {
+  max-width: 100%;
+  width: 100%;
 }
