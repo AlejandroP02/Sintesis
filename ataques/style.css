@@ -15,8 +15,8 @@ body {
 #desc{
   position: absolute;
   top: 20%;
-  left: 40%;
-  transform: translate(-20%, -40%);
+  left: 50%;
+  transform: translate(-50%, -20%);
 }
 #ataques{
   position: absolute;
