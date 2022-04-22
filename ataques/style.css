@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9b9e9e;
+}
+#regreso{
+  position: absolute;
+  background-color: white;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+
+}
+#ataques{
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  top: 40%;
+  left: 30%;
+}
+
+.boton-ataques{
+  position: relative;
+  padding: 1em;
+}
+button{
+  width: 10em;
+  height: 5em;
+}
