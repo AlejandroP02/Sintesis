@@ -3,8 +3,8 @@
   padding: 1em 6em;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: grey;
-  text-align: center;
+  background-color: #7D8889;
+  font-family: monospace;
 }
 #licencias {
   position: absolute;
@@ -13,4 +13,12 @@
 }
 #correos h4 {
   margin-bottom: 0.5em;
+}
+#menu-footer ul {
+  list-style: none;
+}
+#menu-footer a {
+  text-decoration: none;
+  color: black;
+
 }

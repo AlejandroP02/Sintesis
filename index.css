@@ -2,6 +2,9 @@
 #portada {
   text-align: center;
 }
+#portada h1 {
+  padding: 0.5em;
+}
 #portada-img img {
   height: 20em;
   max-width: 100%;
@@ -13,12 +16,18 @@
   text-align: justify;
 }
 #fotos {
-
+  position: relative;
   padding: 2em 5em;
 }
 #fotos img {
   max-width: 100%;
   width: 100%;
+}
+#fotos h2 {
+  top: 2em;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 10%);
 }
 #diagram {
   border: 10px solid white;
@@ -36,4 +45,11 @@
 }
 #router2 {
   padding-left: 0.5em;
+}
+.relativo {position: relative;}
+.routers-nombre{
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translate(-50%, 10%);
 }

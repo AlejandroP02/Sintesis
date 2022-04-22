@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #9b9e9e;
+  background-color: #C2CBCB;
 }
 
 menu{
@@ -18,7 +18,7 @@ menu{
 }
 #menu ul {
   list-style-type: none;
-  background-color: grey;
+  background-color: #7D8889;
   padding: 0;
   text-align: center;
   padding: 2em 4em;
