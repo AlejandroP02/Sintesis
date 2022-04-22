@@ -13,7 +13,7 @@
   text-align: justify;
 }
 #fotos {
-  
+
   padding: 2em 5em;
 }
 #fotos img {
@@ -21,7 +21,8 @@
   width: 100%;
 }
 #diagram {
-  border: 10px solid white
+  border: 10px solid white;
+  margin-bottom: 0.8em;
 }
 #fotos-grid {
   display: grid;
