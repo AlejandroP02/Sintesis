@@ -5,7 +5,9 @@
 body {
   background-color: #C2CBCB;
 }
-
+.relativo {position: relative;}
+.titulo-h2 {font-size: calc(0.4em + 1vw);}
+.titulo-h3 {font-size: calc(0.2em + 1vw);}
 menu{
   padding: 0;
 }

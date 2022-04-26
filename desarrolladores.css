@@ -1,0 +1,23 @@
+#autores {
+  padding: 2em 5em;
+}
+*{border: 2px solid black;}
+.autores {
+  display: grid;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.autores img {
+  border: 2px solid black;
+  max-width: 100%;
+  width: 100%;
+}
+.A1{grid-template-columns: 0.5fr 3fr;}
+.A2{grid-template-columns: 3fr 0.5fr;}
+.autores-texto {
+  position: static;
+  top: 50%;
+  padding: 1em;
+  text-align: justify;
+
+}
