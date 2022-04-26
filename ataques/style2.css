@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #C2CBCB;
+}
+menu{
+  padding: 0;
+}
+#menu {position: relative;}
+.logo {
+  width:3em;
+  position:absolute;
+  left:1em;
+  top:1em;
+}
+#menu ul {
+  list-style-type: none;
+  background-color: #7D8889;
+  padding: 0;
+  text-align: center;
+  padding: 2em 4em;
+}
+#menu li {
+  padding: 0 15px;
+  display: inline-block;
+}
+#menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#ataques {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em 2em;
+}
+.ataques {
+  position: relative;
+  background-color: #deaa87;
+  border: 3px solid white;
+  margin: 0.1em;
+  padding: 1em;
+}
+.boton {
+  padding-top: 0.1em;
+  text-align: right;
+}
+
+#footer {
+  position: relative;
+  padding: 1em 6em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #7D8889;
+  font-family: monospace;
+}
+#licencias {
+  position: absolute;
+  right: 1.7em;
+  bottom: 1.5em;
+}
+#correos h4 {
+  margin-bottom: 0.5em;
+}
+#menu-footer ul {
+  list-style: none;
+}
+#menu-footer a {
+  text-decoration: none;
+  color: black;
+
+}
