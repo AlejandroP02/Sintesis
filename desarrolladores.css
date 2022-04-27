@@ -12,7 +12,20 @@
   max-width: 100%;
   width: 100%;
 }
-.A1{grid-template-columns: 0.5fr 3fr;}
+.relativo2{position: relative;}
+.A1{
+    position: absolute;
+    grid-template-columns: 0.5fr 3fr;
+    animation-name: example;
+    animation-duration: 3s;
+    left: 10em;
+  }
+  @keyframes example {
+  0%   {opacity: 0%}
+  25%  {opacity: 25%}
+  50%  {opacity: 50%}
+  100% {opacity: 100%}
+}
 .A2{grid-template-columns: 3fr 0.5fr;}
 .autores-texto {
   position: static;
