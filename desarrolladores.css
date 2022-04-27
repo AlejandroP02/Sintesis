@@ -1,13 +1,19 @@
 #autores {
   padding: 2em 5em;
 }
-*{border: 2px solid black;}
+
 body {overflow-x: hidden;}
 .autores {
   display: grid;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+.autores * {
+  border: 2px solid black;
+}
+.A1 p {border-left: none !important;}
+.A2 p {border-right: none !important;}
+
 .autores img {
   border: 2px solid black;
   max-width: 100%;
