@@ -2,6 +2,7 @@
   padding: 2em 5em;
 }
 *{border: 2px solid black;}
+body {overflow-x: hidden;}
 .autores {
   display: grid;
   margin-top: 0.5em;
@@ -14,19 +15,26 @@
 }
 .relativo2{position: relative;}
 .A1{
-    position: absolute;
+  position: relative;
     grid-template-columns: 0.5fr 3fr;
-    animation-name: example;
+    animation-name: MovimientoDerecha;
     animation-duration: 3s;
-    left: 10em;
   }
-  @keyframes example {
-  0%   {opacity: 0%}
-  25%  {opacity: 25%}
-  50%  {opacity: 50%}
-  100% {opacity: 100%}
+  @keyframes MovimientoDerecha {
+  0%   {right: -100%}
+  100% {right: 0%}
 }
-.A2{grid-template-columns: 3fr 0.5fr;}
+.A2{
+  position: relative;
+  grid-template-columns: 3fr 0.5fr;
+  animation-name: MovimientoIzquierda;
+  animation-duration: 6s;
+}
+@keyframes MovimientoIzquierda {
+0%   {left: -110%}
+50%   {left: -110%}
+100% {left: 0%}
+}
 .autores-texto {
   position: static;
   top: 50%;
