@@ -1,6 +1,6 @@
 #footer {
   position: relative;
-  padding: 1em 6em;
+  padding: 1.5em 6em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #7D8889;
@@ -13,12 +13,16 @@
 }
 #correos h4 {
   margin-bottom: 0.5em;
+  font-size: calc(0.3em + 1vw);
 }
+#correos a {font-size: calc(0.5px + 0.5vw);}
 #menu-footer ul {
   list-style: none;
 }
+
 #menu-footer a {
   text-decoration: none;
   color: black;
+  font-size: calc(0.5px + 0.5vw);
 
 }
