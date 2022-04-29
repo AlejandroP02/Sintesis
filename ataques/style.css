@@ -74,3 +74,7 @@ menu{
   color: black;
 
 }
+.hidden {
+  visibility: hidden;
+  position: absolute;
+}
