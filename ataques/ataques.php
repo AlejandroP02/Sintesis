@@ -61,14 +61,14 @@
     $output = system('python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
 
     if($_GET['stop']);
-   {
-       func();
-   }
-   function func()
-   {
-     $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
-     $matar = shell_exec(`kill $PID`);
-   }
+      {
+        func();
+      }
+    function func()
+      {
+        $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
+        $matar = shell_exec(`kill $PID`);
+      }
 
     print_r('python2 scripts/Torshammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
 
