@@ -13,3 +13,10 @@ fetch("./menu.html")
     .then(data => {
       document.querySelector("footer").innerHTML = data;
     });
+var DDOS = document.getElementById('thorhammer');
+
+DDOS.addEventListener("click", ataque_DDOS);
+
+function ataque_DDOS() {
+  
+}
