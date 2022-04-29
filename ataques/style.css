@@ -88,4 +88,7 @@ menu{
   text-align: center;
   padding-top: 15%;
 }
+.formularios p {
+  color: #7D8889;
+}
 .hidden {visibility: hidden;}
