@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="style.css">
-    <link rel="alternate" href="Scripts.php">
+
   </head>
   <body>
     <menu></menu>
@@ -56,21 +56,21 @@
     <footer></footer>
     <?php
 
-    // Use ls command to shell_exec
-    // function
-    $output = system('python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
+      // Use ls command to shell_exec
+      // function
+      // $output = shell_exec('python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
+      $output = shell_exec('python2 scripts/ThorHammer/torshammer.py -t 192.168.1.133 -p 80 -r 500');
+      if($_GET['stop']);
+        {
+          func();
+        }
+      function func()
+        {
+          $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
+          $matar = shell_exec(`kill $PID`);
+        }
 
-    if($_GET['stop']);
-      {
-        func();
-      }
-    function func()
-      {
-        $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
-        $matar = shell_exec(`kill $PID`);
-      }
-
-    print_r('python2 scripts/Torshammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE']);
+      print_r($output);
 
     ?>
   </body>
