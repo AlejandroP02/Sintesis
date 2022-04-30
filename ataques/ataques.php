@@ -58,9 +58,11 @@
 
       // Use ls command to shell_exec
       // function
-      $output = 'python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE'];
-      // $output = "mkdir hola";
+      // $output = 'python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE'];
+      $output = "ls";
       shell_exec($output);
+      print_r(shell_exec($output));
+      echo "<br>";
       if($_GET['stop']);
         {
           func();
