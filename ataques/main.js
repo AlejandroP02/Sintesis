@@ -20,10 +20,12 @@ DDOS.addEventListener("click", ataque_DDOS);
 
 function ataque_DDOS() {
   var Form_DDOS = document.getElementById('F-DDOS');
- if (Form_DDOS.classList.contains('hidden')) {
-   Form_DDOS.classList.remove( 'hidden' );
+  console.log(Form_DDOS.style.display);
+ if (Form_DDOS.style.display == 'none') {
+   Form_DDOS.style.display = 'block';
  } else {
-   Form_DDOS.classList.add( 'hidden' );
+      Form_DDOS.style.display = 'none';
  }
+
 
 }
