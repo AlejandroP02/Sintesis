@@ -27,9 +27,10 @@
       <div class="ataques">
         <h2>DDOS</h2>
         <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
-        <form class="boton" id="kill" action="scripts.php" method="post">
+        <form class="boton" id="kill" action="scripts.php" method="post" onsubmit="return kill();">
           <button id="DDOS" type="button" name="button">Atacar</button>
-          <button type="submit" name="DDOS-stop">Parar ataque</button>
+          <button type="submit" name="stop">Parar ataque</button>
+          <input type="hidden" name="DDOS-stop" value="1">
         </form>
       </div>
       <div class="ataques">
