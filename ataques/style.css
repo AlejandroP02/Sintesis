@@ -46,13 +46,26 @@ menu{
   border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1;
   margin: 0.5em;
   padding: 1em;
+  height: 13em;
+}
+.ataques p {
+  padding-top: 0.5em;
+}
+.ataques form{
+  margin-left: -1em;
+  width: 100%;
+  position: absolute;
+  bottom: 0.5em;
 }
 .boton {
   padding-top: 0.5em;
   text-align: center;
 }
-
+footer {
+  width: 100%;
+}
 #footer {
+  width: 100%;
   position: relative;
   padding: 1em 6em;
   display: grid;

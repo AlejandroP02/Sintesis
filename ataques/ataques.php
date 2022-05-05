@@ -39,44 +39,64 @@
       </form>
     </div>
 
-
-
-    <div id="ataques">
-      <div class="ataques">
-        <h2>DDOS</h2>
-        <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
-        <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill();">
-          <button id="DDOS" type="button" name="button">Atacar</button>
-          <button type="submit" name="stop">Parar ataque</button>
-          <input type="hidden" name="DDOS-stop" value="1">
-        </form>
+      <div id="ataques">
+        <div class="ataques">
+          <h2>DDOS</h2>
+          <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
+          <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
+            <button id="DDOS" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="DDOS-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
+          <h2>ATAQUE2</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill2();">
+            <button id="ATAQUE2" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE2-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
+          <h2>ATAQUE3</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque3" action="scripts.php" method="post" onsubmit="return kill3();">
+            <button id="ATAQUE3" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE3-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
+          <h2>ATAQUE4</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
+            <button id="ATAQUE4" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE4-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
+          <h2>ATAQUE5</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque5" action="scripts.php" method="post" onsubmit="return kill5();">
+            <button id="ATAQUE5" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE5-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
+          <h2>ATAQUE6</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque6" action="scripts.php" method="post" onsubmit="return kill6();">
+            <button id="ATAQUE6" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE6-stop" value="1">
+          </form>
+        </div>
       </div>
-      <div class="ataques">
-        <h2>ATAQUE2</h2>
-        <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
-        <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill();">
-          <button id="ATAQUE2" type="button" name="button">Atacar</button>
-          <button type="submit" name="stop">Parar ataque</button>
-          <input type="hidden" name="ATAQUE2-stop" value="1">
-        </form>
-      </div>
-      <div class="ataques">
-
-      </div>
-      <div class="ataques">
-      </div>
-      <div class="ataques">
-
-      </div>
-      <div class="ataques">
-      </div>
-      <div class="ataques">
-
-      </div>
-      <div class="ataques">
-      </div>
-    </div>
     <footer></footer>
+
   </body>
   <script type="text/javascript" src="main.js"></script>
   <script type="text/javascript" src="atacks.js"></script>
