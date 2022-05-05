@@ -42,7 +42,8 @@ menu{
   color: gold;
   position: relative;
   background-color: #7D8889;
-  border: 0.2em solid gold;
+  border: 0.2em solid;
+  border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1;
   margin: 0.5em;
   padding: 1em;
 }
@@ -84,11 +85,22 @@ menu{
   width: 100%;
   top: 0;
   text-align: center;
-  padding: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: aliceblue;
+  font-family: monospace;
 }
 
 .formularios p {
-  color: #7D8889;
+  padding: 0.5em;
+  font-size: calc(10px + 0.1vw)
+}
+form > input {
+  padding: 10px;
+}
+form > button {
+  padding: 10px;
+  margin: 0.5em;
 }
 
 

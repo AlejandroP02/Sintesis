@@ -14,7 +14,7 @@ function fetchcall () {
 
 function kill () {
   // (B1) GET FORM DATA
-  var data = new FormData(document.getElementById("kill"));
+  var data = new FormData(document.getElementById("ataque1"));
 
   // (B2) FETCH
   fetch("scripts.php", { method: "POST", body: data })
