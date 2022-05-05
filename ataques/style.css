@@ -46,7 +46,7 @@ menu{
   border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1;
   margin: 0.5em;
   padding: 1em;
-  /* height: 13em; */
+  
 }
 .ataques::after {
   content: "";
