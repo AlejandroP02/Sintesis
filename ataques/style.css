@@ -50,6 +50,7 @@ menu{
 }
 .ataques p {
   padding-top: 0.5em;
+  font-size: calc(0.1em + 1vw);
 }
 .ataques form{
   margin-left: -1em;
