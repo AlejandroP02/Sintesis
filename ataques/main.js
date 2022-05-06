@@ -29,9 +29,9 @@ function ataque_DDOS() {
 
 var ARPSPOOFING = document.getElementById('ARPSPOOFING');
 
-ARPSPOOFING.addEventListener("click", ARPSPOOFING);
+ARPSPOOFING.addEventListener("click", ataque_ARPSPOOFING);
 
-function ARPSPOOFING() {
+function ataque_ARPSPOOFING() {
   ocultarFormularios();
   var Form_ARPSPOOFING = document.getElementById('F-ARPSPOOFING');
   console.log(Form_ARPSPOOFING.style.display);

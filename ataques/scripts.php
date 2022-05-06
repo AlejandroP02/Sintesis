@@ -22,7 +22,7 @@
 
   // Use ls command to shell_exec
   // function
-  $ARPSPOOFING = 'xd';
+  $ARPSPOOFING = 'python3 scripts/arp_spoofing.py '.$_POST['IP-V']." ".$_POST['IP-P'];
 
   if (isset($_POST['ARPSPOOFING']))
   {
@@ -32,7 +32,7 @@
 
    if(isset($_POST['ARPSPOOFING-stop']))
      {
-       shell_exec("kill -9 `pidof python2`");
+       shell_exec("kill -9 `pidof python3`");
      }
 
 
