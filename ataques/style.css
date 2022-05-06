@@ -46,7 +46,7 @@ menu{
   border-image: radial-gradient(rgb(0,143,104), rgb(250,224,66)) 1;
   margin: 0.5em;
   padding: 1em;
-  
+
 }
 .ataques::after {
   content: "";
@@ -67,11 +67,8 @@ menu{
   padding-top: 0.5em;
   text-align: center;
 }
-footer {
-  width: 100%;
-}
+
 #footer {
-  width: 100%;
   position: relative;
   padding: 1em 6em;
   display: grid;

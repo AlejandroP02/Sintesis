@@ -52,7 +52,7 @@
         <div class="ataques">
           <h2>ARPSPOOFING</h2>
           <p>Texto aleatorio XD.</p>
-          <form class="boton" id="ARPSPOOFING" action="scripts.php" method="post" onsubmit="return kill2();">
+          <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill2();">
             <button id="ARPSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
             <input type="hidden" name="ARPSPOOFING-stop" value="1">
