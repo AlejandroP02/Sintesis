@@ -22,15 +22,15 @@
 
   // Use ls command to shell_exec
   // function
-  $ATAQUE2 = 'xd';
+  $ARPSPOOFING = 'xd';
 
-  if (isset($_POST['ATAQUE2']))
+  if (isset($_POST['ARPSPOOFING']))
   {
-    print_r($ATAQUE2);
-    shell_exec($ATAQUE2);
+    print_r($ARPSPOOFING);
+    shell_exec($ARPSPOOFING);
   }
 
-   if(isset($_POST['ATAQUE2-stop']))
+   if(isset($_POST['ARPSPOOFING-stop']))
      {
        shell_exec("kill -9 `pidof python2`");
      }

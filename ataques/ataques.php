@@ -26,9 +26,9 @@
     </div>
 
 
-    <div class="formularios" id="F-ATAQUE2" style="display: none;">
-      <form id="ATAQUE2-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
-        <input type="hidden" name="ATAQUE2" value="1">
+    <div class="formularios" id="F-ARPSPOOFING" style="display: none;">
+      <form id="ARPSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
+        <input type="hidden" name="ARPSPOOFING" value="1">
         <p>Escribe la IP de la victima.</p>
         <input type="text" name="IP-V" placeholder="192.168.214.100">
         <br>
@@ -50,12 +50,12 @@
           </form>
         </div>
         <div class="ataques">
-          <h2>ATAQUE2</h2>
+          <h2>ARPSPOOFING</h2>
           <p>Texto aleatorio XD.</p>
-          <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill2();">
-            <button id="ATAQUE2" type="button" name="button">Atacar</button>
+          <form class="boton" id="ARPSPOOFING" action="scripts.php" method="post" onsubmit="return kill2();">
+            <button id="ARPSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE2-stop" value="1">
+            <input type="hidden" name="ARPSPOOFING-stop" value="1">
           </form>
         </div>
         <div class="ataques">

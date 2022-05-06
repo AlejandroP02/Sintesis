@@ -27,16 +27,16 @@ function ataque_DDOS() {
  }
 }
 
-var ATAQUE2 = document.getElementById('ATAQUE2');
+var ARPSPOOFING = document.getElementById('ARPSPOOFING');
 
-ATAQUE2.addEventListener("click", ataque2);
+ARPSPOOFING.addEventListener("click", ARPSPOOFING);
 
-function ataque2() {
+function ARPSPOOFING() {
   ocultarFormularios();
-  var Form_ATAQUE2 = document.getElementById('F-ATAQUE2');
-  console.log(Form_ATAQUE2.style.display);
- if (Form_ATAQUE2.style.display == 'none') {
-   Form_ATAQUE2.style.display = 'block';
+  var Form_ARPSPOOFING = document.getElementById('F-ARPSPOOFING');
+  console.log(Form_ARPSPOOFING.style.display);
+ if (Form_ARPSPOOFING.style.display == 'none') {
+   Form_ARPSPOOFING.style.display = 'block';
  }
 }
 
@@ -45,6 +45,6 @@ function ocultarFormularios() {
 
   var Form_DDOS = document.getElementById('F-DDOS');
   Form_DDOS.style.display = 'none';
-  var Form_ATAQUE2 = document.getElementById('F-ATAQUE2');
-  Form_ATAQUE2.style.display = 'none';
+  var Form_ARPSPOOFING = document.getElementById('F-ARPSPOOFING');
+  Form_ARPSPOOFING.style.display = 'none';
 }
