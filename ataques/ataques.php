@@ -27,7 +27,7 @@
 
 
     <div class="formularios" id="F-ARPSPOOFING" style="display: none;">
-      <form id="ARPSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
+      <form id="ARPSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
         <input type="hidden" name="ARPSPOOFING" value="1">
         <p>Escribe la IP de la victima.</p>
         <input type="text" name="IP-V" placeholder="192.168.214.100">
