@@ -66,7 +66,7 @@
         </div>
         <div class="ataques">
           <h2>ARP SPOOFING</h2>
-          <p>Texto aleatorio XD.</p>
+          <p>ARP SPOOFING es un ataque en red LAN cuyo funcionamiento es envenenar las tablas mac de la victima, para hacerle pensar que el gateway es el hacker, por lo que el hacker realiza un MITM.</p>
           <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill2();">
             <button id="ARPSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
@@ -75,7 +75,7 @@
         </div>
         <div class="ataques">
           <h2>DNS SPOOFING</h2>
-          <p>Texto aleatorio XD.</p>
+          <p>El DNS SPOOFING es [Insertar Definición]. Este ataque solo funciona con dominios en HTTP, y se necesita que la victima esta siendo atacada con el ARP SPOOFING.</p>
           <form class="boton" id="ataque3" action="scripts.php" method="post" onsubmit="return kill3();">
             <button id="DNSSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
