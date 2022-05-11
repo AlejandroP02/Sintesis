@@ -29,11 +29,26 @@
     <div class="formularios" id="F-ARPSPOOFING" style="display: none;">
       <form id="ARPSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
         <input type="hidden" name="ARPSPOOFING" value="1">
+        <h2>ARP SPOOFING</h2>
         <p>Escribe la IP de la victima.</p>
         <input type="text" name="IP-V" placeholder="192.168.214.100">
         <br>
         <p>Escribe la IP de la puerta de enlace.</p>
         <input type="text" name="IP-P" placeholder="192.168.12.10">
+        <br>
+        <button type="submit" name="button">Enviar</button>
+      </form>
+    </div>
+
+    <div class="formularios" id="F-DNSSPOOFING" style="display: none;">
+      <form id="DNSSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
+        <input type="hidden" name="DNSSPOOFING" value="1">
+        <h2>DNS SPOOFING</h2>
+        <p>Escriba el dominio que quiere suplantar.</p>
+        <input type="text" name="ORIGINAL-DOMAIN" placeholder="google.com.">
+        <br>
+        <p>Escriba el dominio con el suplentara al dominio anterior.</p>
+        <input type="text" name="FALSE-DOMAIN" placeholder="10.0.104.200">
         <br>
         <button type="submit" name="button">Enviar</button>
       </form>
@@ -50,7 +65,7 @@
           </form>
         </div>
         <div class="ataques">
-          <h2>ARPSPOOFING</h2>
+          <h2>ARP SPOOFING</h2>
           <p>Texto aleatorio XD.</p>
           <form class="boton" id="ataque2" action="scripts.php" method="post" onsubmit="return kill2();">
             <button id="ARPSPOOFING" type="button" name="button">Atacar</button>
@@ -59,14 +74,15 @@
           </form>
         </div>
         <div class="ataques">
-          <h2>ATAQUE3</h2>
+          <h2>DNS SPOOFING</h2>
           <p>Texto aleatorio XD.</p>
           <form class="boton" id="ataque3" action="scripts.php" method="post" onsubmit="return kill3();">
-            <button id="ATAQUE3" type="button" name="button">Atacar</button>
+            <button id="DNSSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE3-stop" value="1">
+            <input type="hidden" name="DNSSPOOFING-stop" value="1">
           </form>
         </div>
+
         <div class="ataques">
           <h2>ATAQUE4</h2>
           <p>Texto aleatorio XD.</p>

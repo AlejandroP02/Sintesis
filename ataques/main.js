@@ -40,6 +40,19 @@ function ataque_ARPSPOOFING() {
  }
 }
 
+var DNSSPOOFING = document.getElementById('DNSSPOOFING');
+
+DNSSPOOFING.addEventListener("click", ataque_DNSSPOOFING);
+
+function ataque_DNSSPOOFING() {
+  ocultarFormularios();
+  var Form_DNSSPOOFING = document.getElementById('F-DNSSPOOFING');
+  console.log(Form_DNSSPOOFING.style.display);
+ if (Form_DNSSPOOFING.style.display == 'none') {
+   Form_DNSSPOOFING.style.display = 'block';
+ }
+}
+
 
 function ocultarFormularios() {
 
@@ -47,4 +60,6 @@ function ocultarFormularios() {
   Form_DDOS.style.display = 'none';
   var Form_ARPSPOOFING = document.getElementById('F-ARPSPOOFING');
   Form_ARPSPOOFING.style.display = 'none';
+  var Form_DNSSPOOFING = document.getElementById('F-DNSSPOOFING');
+  Form_DNSSPOOFING.style.display = 'none';
 }
