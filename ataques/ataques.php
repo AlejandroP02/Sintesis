@@ -56,6 +56,15 @@
 
       <div id="ataques">
         <div class="ataques">
+          <h2>ESCANER DE RED</h2>
+          <p>Como el nombre indica, este ataque escanea la red y te muestra [Opcion que elijamos]</p>
+          <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
+            <button id="ATAQUE4" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE4-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
           <h2>DDOS</h2>
           <p>Un ataque DDoS, o ataque distribuido de denegación de servicio, es un tipo de ciberataque que intenta hacer que un sitio web o recurso de red no esté disponible colapsándolo con tráfico malintencionado para que no pueda funcionar correctamente.</p>
           <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
@@ -83,15 +92,6 @@
           </form>
         </div>
 
-        <div class="ataques">
-          <h2>ATAQUE4</h2>
-          <p>Texto aleatorio XD.</p>
-          <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
-            <button id="ATAQUE4" type="button" name="button">Atacar</button>
-            <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE4-stop" value="1">
-          </form>
-        </div>
         <div class="ataques">
           <h2>ATAQUE5</h2>
           <p>Texto aleatorio XD.</p>
