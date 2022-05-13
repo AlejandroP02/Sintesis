@@ -90,7 +90,7 @@
       <div id="ataques">
         <div class="ataques">
           <h2>ESCANER DE RED</h2>
-          <p>Como el nombre indica, este ataque escanea la red y te muestra [Opcion que elijamos]</p>
+          <p>Mediante el uso de NMAP se puede escanear la red de distintas formas. Por ello hay multiples parametros para escanear algo en especifico. Para ver todos los parametros que soporta use el boton de [Nombre del boton]</p>
           <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
             <button id="NMAP" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
@@ -117,7 +117,7 @@
         </div>
         <div class="ataques">
           <h2>DNS SPOOFING</h2>
-          <p>El DNS SPOOFING es [Insertar Definición]. Este ataque solo funciona con dominios en HTTP, y se necesita que la victima esta siendo atacada con el ARP SPOOFING.</p>
+          <p>El DNS SPOOFING se basa en cambiar un dominio conocido por otra ip, por ejemplo, puedes cambair el dominio de Google por la ip de una pagina de dudose procedencia. Este ataque solo funciona con dominios en HTTP, y se necesita que la victima esta siendo atacada con el ARP SPOOFING para funcionar correctamente.</p>
           <form class="boton" id="ataque3" action="scripts.php" method="post" onsubmit="return kill3();">
             <button id="DNSSPOOFING" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
@@ -127,7 +127,7 @@
 
         <div class="ataques">
           <h2>SMURF ATTACK</h2>
-          <p>Texto aleatorio XD.</p>
+          <p>Este ataque consiste en usar otro dispositivo de la red como un zombie y realizar ataques mediante este zombie, pudiendo asi salir impune del ataque, el cual normalmente es un flood de pings.</p>
           <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
             <button id="SMURF" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
