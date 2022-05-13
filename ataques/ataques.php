@@ -60,7 +60,7 @@
     </div>
 
     <div class="formularios" id="F-DNSSPOOFING" style="display: none;">
-      <form id="DNSSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
+      <form id="DNSSPOOFING-form" action="scripts.php" method="post" onsubmit="return fetchcall2();">
         <input type="hidden" name="DNSSPOOFING" value="1">
         <h2>DNS SPOOFING</h2>
         <p>Escriba el dominio que quiere suplantar.</p>
@@ -74,7 +74,7 @@
     </div>
 
     <div class="formularios" id="F-SMURF" style="display: none;">
-      <form id="SMURF-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
+      <form id="SMURF-form" action="scripts.php" method="post" onsubmit="return fetchcall3();">
         <input type="hidden" name="SMURF" value="1">
         <h2>SMURF ATTACK</h2>
         <p>Escriba la dirección del dispositivo que actuara como zombi.</p>

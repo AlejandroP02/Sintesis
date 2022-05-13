@@ -26,6 +26,34 @@ function fetchcall1 () {
   return false;
 }
 
+function fetchcall2 () {
+  // (B1) GET FORM DATA
+  var data = new FormData(document.getElementById("DNSSPOOFING-form"));
+
+  // (B2) FETCH
+  fetch("scripts.php", { method: "POST", body: data })
+  .then(res => res.text())
+  .then((txt) => {
+    console.log(txt);
+  })
+  .catch((err) => { console.error(err); });
+  return false;
+}
+
+function fetchcall3 () {
+  // (B1) GET FORM DATA
+  var data = new FormData(document.getElementById("SMURF-form"));
+
+  // (B2) FETCH
+  fetch("scripts.php", { method: "POST", body: data })
+  .then(res => res.text())
+  .then((txt) => {
+    console.log(txt);
+  })
+  .catch((err) => { console.error(err); });
+  return false;
+}
+
 function fetchNMAP () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("NMAP-form"));

@@ -90,7 +90,7 @@
 
    }
 
-    if(isset($_POST['$SMURF-stop']))
+    if(isset($_POST['SMURF-stop']))
       {
         shell_exec("sudo kill -9 `pidof hping3`");
       }
