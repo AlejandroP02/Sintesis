@@ -14,6 +14,19 @@ fetch("./menu.html")
       document.querySelector("footer").innerHTML = data;
     });
 
+var NMAP = document.getElementById('NMAP');
+
+NMAP.addEventListener("click", ataque_NMAP);
+
+function ataque_NMAP() {
+  ocultarFormularios();
+  var Form_NMAP = document.getElementById('F-NMAP');
+  console.log(Form_NMAP.style.display);
+ if (Form_NMAP.style.display == 'none') {
+   Form_NMAP.style.display = 'block';
+ }
+}
+
 var DDOS = document.getElementById('DDOS');
 
 DDOS.addEventListener("click", ataque_DDOS);
@@ -62,4 +75,6 @@ function ocultarFormularios() {
   Form_ARPSPOOFING.style.display = 'none';
   var Form_DNSSPOOFING = document.getElementById('F-DNSSPOOFING');
   Form_DNSSPOOFING.style.display = 'none';
+  var Form_NMAP = document.getElementById('F-NMAP');
+  Form_NMAP.style.display = 'none';
 }

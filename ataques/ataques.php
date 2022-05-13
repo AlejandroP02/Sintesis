@@ -8,6 +8,23 @@
   </head>
   <body>
     <menu></menu>
+    <div class="formularios" id="F-NMAP" style="display: none;">
+      <form id="NMAP-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
+        <input type="hidden" name="NMAP" value="1">
+        <h2>NMAP</h2>
+        <p>Escribe la opción.</p>
+        <input type="text" name="OPCION" placeholder="-A, -O, -Sv...">
+        <br>
+        <p>Define la velocidad/ruido del escaneo.</p>
+        <input type="text" name="VELOCIDAD" placeholder="-T5">
+        <br>
+        <p>Escribe la ip de la red o el host que deses escanear.</p>
+        <input type="text" name="HOST_NMAP" placeholder="192.168.12.0/24 o 192.168.12.117">
+        <br>
+        <button type="submit" name="button">Enviar</button>
+      </form>
+    </div>
+
     <div class="formularios" id="F-DDOS" style="display: none;">
       <form id="DDOS-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
         <input type="hidden" name="DDOS" value="1">
@@ -59,9 +76,9 @@
           <h2>ESCANER DE RED</h2>
           <p>Como el nombre indica, este ataque escanea la red y te muestra [Opcion que elijamos]</p>
           <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
-            <button id="ATAQUE4" type="button" name="button">Atacar</button>
+            <button id="NMAP" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE4-stop" value="1">
+            <input type="hidden" name="NMAP-stop" value="1">
           </form>
         </div>
         <div class="ataques">
@@ -93,21 +110,21 @@
         </div>
 
         <div class="ataques">
+          <h2>ATAQUE4</h2>
+          <p>Texto aleatorio XD.</p>
+          <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
+            <button id="ATAQUE4" type="button" name="button">Atacar</button>
+            <button type="submit" name="stop">Parar ataque</button>
+            <input type="hidden" name="ATAQUE4-stop" value="1">
+          </form>
+        </div>
+        <div class="ataques">
           <h2>ATAQUE5</h2>
           <p>Texto aleatorio XD.</p>
           <form class="boton" id="ataque5" action="scripts.php" method="post" onsubmit="return kill5();">
             <button id="ATAQUE5" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
             <input type="hidden" name="ATAQUE5-stop" value="1">
-          </form>
-        </div>
-        <div class="ataques">
-          <h2>ATAQUE6</h2>
-          <p>Texto aleatorio XD.</p>
-          <form class="boton" id="ataque6" action="scripts.php" method="post" onsubmit="return kill6();">
-            <button id="ATAQUE6" type="button" name="button">Atacar</button>
-            <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE6-stop" value="1">
           </form>
         </div>
       </div>
