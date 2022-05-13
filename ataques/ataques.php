@@ -10,6 +10,9 @@
     <menu></menu>
 
     <div class="formularios" id="F-NMAP" style="display: none;">
+      <div id="INFO-NMAP">
+        <iframe src="https://nmap.org/man/es/man-briefoptions.html" width="100%" height="100%"></iframe>
+      </div>
       <form id="NMAP-form" action="scripts.php" method="post" onsubmit="return fetchNMAP();">
         <input type="hidden" name="NMAP" value="1">
         <h2>NMAP</h2>
@@ -93,7 +96,7 @@
           <p>Mediante el uso de NMAP se puede escanear la red de distintas formas. Por ello hay multiples parametros para escanear algo en especifico. Para ver todos los parametros que soporta use el boton de [Nombre del boton]</p>
           <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
             <button id="NMAP" type="button" name="button">Atacar</button>
-            <button type="submit" name="stop">Parar ataque</button>
+            <button type="submit" name="stop">Cerrar formulario</button>
             <input type="hidden" name="NMAP-stop" value="1">
           </form>
         </div>

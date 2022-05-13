@@ -154,6 +154,7 @@ menu{
 
 }
 .formularios {
+  position: relative;
   background-color: #C2CBCB;
   background-image: url(img/fondo-formulario.png);
   background-size: cover;
@@ -167,7 +168,6 @@ menu{
   color: aliceblue;
   font-family: monospace;
 }
-
 .formularios p {
   padding: 0.5em;
   font-size: calc(10px + 0.1vw)
@@ -178,6 +178,16 @@ form > input {
 form > button {
   padding: 10px;
   margin: 0.5em;
+}
+#INFO-NMAP {
+  z-index: 3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 

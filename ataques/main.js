@@ -27,6 +27,7 @@ function ataque_NMAP() {
  }
 }
 
+
 var DDOS = document.getElementById('DDOS');
 
 DDOS.addEventListener("click", ataque_DDOS);
