@@ -8,8 +8,10 @@
   </head>
   <body>
     <menu></menu>
+
+    <div id="resultado"></div>
     <div class="formularios" id="F-NMAP" style="display: none;">
-      <form id="NMAP-form" action="scripts.php" method="post" onsubmit="return fetchcall();">
+      <form id="NMAP-form" action="scripts.php" method="post" onsubmit="return fetchNMAP();">
         <input type="hidden" name="NMAP" value="1">
         <h2>NMAP</h2>
         <p>Escribe la opción.</p>

@@ -26,6 +26,21 @@ function fetchcall1 () {
   return false;
 }
 
+function fetchNMAP () {
+  // (B1) GET FORM DATA
+  var data = new FormData(document.getElementById("NMAP-form"));
+
+  // (B2) FETCH
+  fetch("scripts.php", { method: "POST", body: data })
+  .then(res => res.text())
+  .then((txt) => {
+    alert(txt);
+    document.getElementById("resultado").innetHTML(txt);
+  })
+  .catch((err) => { console.error(err); });
+  return false;
+}
+
 function kill1 () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("ataque1"));
