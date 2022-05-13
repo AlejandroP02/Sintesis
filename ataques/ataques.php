@@ -9,7 +9,6 @@
   <body>
     <menu></menu>
 
-    <div id="resultado"></div>
     <div class="formularios" id="F-NMAP" style="display: none;">
       <form id="NMAP-form" action="scripts.php" method="post" onsubmit="return fetchNMAP();">
         <input type="hidden" name="NMAP" value="1">
@@ -24,6 +23,7 @@
         <input type="text" name="HOST_NMAP" placeholder="192.168.12.0/24 o 192.168.12.117">
         <br>
         <button type="submit" name="button">Enviar</button>
+        <div class="loader"></div>
       </form>
     </div>
 
@@ -73,6 +73,20 @@
       </form>
     </div>
 
+    <div class="formularios" id="F-SMURF" style="display: none;">
+      <form id="SMURF-form" action="scripts.php" method="post" onsubmit="return fetchcall1();">
+        <input type="hidden" name="SMURF" value="1">
+        <h2>SMURF ATTACK</h2>
+        <p>Escriba la dirección del dispositivo que actuara como zombi.</p>
+        <input type="text" name="ZOMBI" placeholder="192.168.12.182">
+        <br>
+        <p>Escriba la dirección de la victima.</p>
+        <input type="text" name="VICTIMA" placeholder="192.168.12.117">
+        <br>
+        <button type="submit" name="button">Enviar</button>
+      </form>
+    </div>
+
       <div id="ataques">
         <div class="ataques">
           <h2>ESCANER DE RED</h2>
@@ -112,16 +126,16 @@
         </div>
 
         <div class="ataques">
-          <h2>ATAQUE4</h2>
+          <h2>SMURF ATTACK</h2>
           <p>Texto aleatorio XD.</p>
           <form class="boton" id="ataque4" action="scripts.php" method="post" onsubmit="return kill4();">
-            <button id="ATAQUE4" type="button" name="button">Atacar</button>
+            <button id="SMURF" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
-            <input type="hidden" name="ATAQUE4-stop" value="1">
+            <input type="hidden" name="SMURF-stop" value="1">
           </form>
         </div>
         <div class="ataques">
-          <h2>ATAQUE5</h2>
+          <h2>Ataque 5</h2>
           <p>Texto aleatorio XD.</p>
           <form class="boton" id="ataque5" action="scripts.php" method="post" onsubmit="return kill5();">
             <button id="ATAQUE5" type="button" name="button">Atacar</button>

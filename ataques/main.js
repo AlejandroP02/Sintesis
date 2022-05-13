@@ -66,15 +66,29 @@ function ataque_DNSSPOOFING() {
  }
 }
 
+var SMURF = document.getElementById('SMURF');
+
+SMURF.addEventListener("click", ataque_SMURF);
+
+function ataque_SMURF() {
+  ocultarFormularios();
+  var Form_SMURF = document.getElementById('F-SMURF');
+  console.log(Form_SMURF.style.display);
+ if (Form_SMURF.style.display == 'none') {
+   Form_SMURF.style.display = 'block';
+ }
+}
 
 function ocultarFormularios() {
 
+  var Form_NMAP = document.getElementById('F-NMAP');
+  Form_NMAP.style.display = 'none';
   var Form_DDOS = document.getElementById('F-DDOS');
   Form_DDOS.style.display = 'none';
   var Form_ARPSPOOFING = document.getElementById('F-ARPSPOOFING');
   Form_ARPSPOOFING.style.display = 'none';
   var Form_DNSSPOOFING = document.getElementById('F-DNSSPOOFING');
   Form_DNSSPOOFING.style.display = 'none';
-  var Form_NMAP = document.getElementById('F-NMAP');
-  Form_NMAP.style.display = 'none';
+  var Form_SMURF = document.getElementById('F-SMURF');
+  Form_SMURF.style.display = 'none';
 }
