@@ -65,6 +65,7 @@ function fetchNMAP () {
     // var Alerta
     // document.getElementById("resultado").innetHTML(txt);
     document.getElementById("resultado").innerHTML = txt;
+    document.getElementById("resultado").style.background = 'white';
   })
   .catch((err) => { console.error(err); });
   return false;
