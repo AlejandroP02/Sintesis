@@ -14,6 +14,18 @@ fetch("./menu.html")
       document.querySelector("footer").innerHTML = data;
     });
 
+var CARGA = document.getElementById('carga');
+
+CARGA.addEventListener("click", cargar);
+
+function cargar() {
+  var Cargar_NMAP = document.getElementById('loader');
+  console.log(Cargar_NMAP.style.display);
+ if (Cargar_NMAP.style.display == 'none') {
+   Cargar_NMAP.style.display = 'block';
+ }
+}
+
 var NMAP = document.getElementById('NMAP');
 
 NMAP.addEventListener("click", ataque_NMAP);

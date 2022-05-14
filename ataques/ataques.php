@@ -8,7 +8,9 @@
   </head>
   <body>
     <menu></menu>
-
+    <div>
+      <p id="resultado"></p>
+    </div>
     <div class="formularios" id="F-NMAP" style="display: none;">
       <div id="INFO-NMAP">
         <iframe src="https://nmap.org/man/es/man-briefoptions.html" width="100%" height="100%"></iframe>
@@ -25,8 +27,8 @@
         <p>Escribe la ip de la red o el host que deses escanear.</p>
         <input type="text" name="HOST_NMAP" placeholder="192.168.12.0/24 o 192.168.12.117">
         <br>
-        <button type="submit" name="button">Enviar</button>
-        <div class="loader"></div>
+        <button id="carga" type="submit" name="button">Enviar</button>
+        <div class="loader" id="loader" style="display: none;"></div>
       </form>
     </div>
 

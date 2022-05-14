@@ -57,13 +57,14 @@ function fetchcall3 () {
 function fetchNMAP () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("NMAP-form"));
-
   // (B2) FETCH
   fetch("scripts.php", { method: "POST", body: data })
   .then(res => res.text())
   .then((txt) => {
     alert(txt);
-    document.getElementById("resultado").innetHTML(txt);
+    // var Alerta
+    // document.getElementById("resultado").innetHTML(txt);
+    document.getElementById("resultado").innerHTML = txt;
   })
   .catch((err) => { console.error(err); });
   return false;
