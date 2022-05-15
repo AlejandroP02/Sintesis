@@ -2,6 +2,15 @@ function ocultarCarga(){
   var Cargar_NMAP = document.getElementById('loader');
   Cargar_NMAP.style.display = 'none';
 }
+function envioNMAP() {
+  var Enviar_NMAP = document.getElementById('carga');
+  if (Enviar_NMAP.style.display == 'none') {
+   Enviar_NMAP.style.display = 'inline';
+ }
+}
+
+
+
 function fetchcall () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("DDOS-form"));
@@ -67,6 +76,7 @@ function fetchNMAP () {
   .then((txt) => {
     ocultarCarga();
     alert(txt);
+    envioNMAP();
     // var Alerta
     // document.getElementById("resultado").innetHTML(txt);
     // document.getElementById("resultado").innerHTML = txt;

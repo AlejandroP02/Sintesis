@@ -23,6 +23,7 @@ function cargar() {
   console.log(Cargar_NMAP.style.display);
  if (Cargar_NMAP.style.display == 'none') {
    Cargar_NMAP.style.display = 'block';
+   ocultarEnvio();
  }
 }
 
@@ -105,3 +106,11 @@ function ocultarFormularios() {
   var Form_SMURF = document.getElementById('F-SMURF');
   Form_SMURF.style.display = 'none';
 }
+function ocultarEnvio(){
+  var Cargar_NMAP = document.getElementById('carga');
+  Cargar_NMAP.style.display = 'none';
+}
+function envioNMAP() {
+  var Enviar_NMAP = document.getElementById('carga');
+  Enviar_NMAP.style.display = 'block';
+ }
