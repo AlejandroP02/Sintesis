@@ -110,7 +110,3 @@ function ocultarEnvio(){
   var Cargar_NMAP = document.getElementById('carga');
   Cargar_NMAP.style.display = 'none';
 }
-function envioNMAP() {
-  var Enviar_NMAP = document.getElementById('carga');
-  Enviar_NMAP.style.display = 'block';
- }
