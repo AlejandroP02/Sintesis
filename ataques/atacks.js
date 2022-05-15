@@ -1,3 +1,7 @@
+function ocultarCarga(){
+  var Cargar_NMAP = document.getElementById('loader');
+  Cargar_NMAP.style.display = 'none';
+}
 function fetchcall () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("DDOS-form"));
@@ -61,11 +65,12 @@ function fetchNMAP () {
   fetch("scripts.php", { method: "POST", body: data })
   .then(res => res.text())
   .then((txt) => {
+    ocultarCarga();
     alert(txt);
     // var Alerta
     // document.getElementById("resultado").innetHTML(txt);
-    document.getElementById("resultado").innerHTML = txt;
-    document.getElementById("resultado").style.background = 'white';
+    // document.getElementById("resultado").innerHTML = txt;
+    // document.getElementById("resultado").style.background = white;
   })
   .catch((err) => { console.error(err); });
   return false;

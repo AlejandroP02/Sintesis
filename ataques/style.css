@@ -63,6 +63,7 @@ menu{
   animation-delay: 0.16s;
   left: 50%;
   transform: translate(-50%, 10%);
+  bottom:-0.5em;
 }
 .loader:after {
   left: 1.5em;
