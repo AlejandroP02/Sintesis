@@ -96,3 +96,24 @@
       }
 
  ?>
+
+ <?php
+
+    // Use ls command to shell_exec
+    // function
+     $DHCP = 'sudo python3 DHCP_Starvation.py '.$_POST['RED']." ".$_POST['IP-DHCP'];
+
+
+    if (isset($_POST['DHCP']))
+    {
+      print_r($DHCP);
+      shell_exec($DHCP);
+
+    }
+
+     if(isset($_POST['DHCP-stop']))
+       {
+         shell_exec("sudo kill -9 `pidof python3`");
+       }
+
+  ?>
