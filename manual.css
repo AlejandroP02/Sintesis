@@ -1,5 +1,7 @@
 #Manual {
   margin: 2em 3em;
+  padding: 1em;
+  background-color: #b1b3b2;
 }
 #Manual h1 {
   margin: 1em;
@@ -12,15 +14,15 @@
 dd {
   padding-left: 1em;
 }
-code {
-  max-width: 100%;
-  width: 100%;
-  background-color: black;
+code span {
   color: white;
+  background-color: black;
 }
 code p {
-  margin-top: 0.5em;
+  color: white;
+  margin: 0.5em 0;
   background-color: black;
+  padding: 0.5em 0;
 }
 #necesario {
   padding-left: 2em;

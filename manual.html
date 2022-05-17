@@ -59,7 +59,18 @@
               </p>
             </code>
 
-
+          <h2><li>CONFIGURACIÓN DEL SERVIDOR</li></h2>
+            <p>Lo mas necesario a configurar en servidor para no tener ningun problema al ejecutar los ataques es permitir a apache el uso de sudo al lanzar un comando.<br>
+            Esta tarea se realiza de la siguiente forma:
+            </p>
+            <code>
+              <p>sudo visudo</p>
+            </code>
+            <p>De esta forma se accede al fichero donde se encuentran los permisos de sudo (<code><span>/etc/sudoers</span></code>) y al usar visudo el sistema avisa al usuario si hay algun error en el fichero.</p>
+            <code>
+              <p>www-data ALL=(ALL) NOPASSWD:ALL</p>
+            </code>
+            <p>Al escribir la linea anterior al final del fichero le estamos dando permisos a apache de usar sudo (es decir permisos de administrador) con cualquier comando sin uso de contraseña, si es necesario se puede especificar los comandos que se necesitan privilegios, para mayor seguridad.</p>
           <h2><li>USO DE ATAQUES</li></h2>
             <h3><dd>- ESCANEO DE RED</dd></h3>
             <h3><dd>- DDOS</dd></h3>
