@@ -94,11 +94,10 @@ menu{
     height: 5em;
   }
 }
-
 #ataques {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 1em 2em;
+  padding: 3em 2em;
 }
 .ataques {
   color: gold;
@@ -164,8 +163,6 @@ menu{
   width: 100%;
   top: 0;
   text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
   color: aliceblue;
   font-family: monospace;
   padding: 0 36em;
@@ -173,6 +170,10 @@ menu{
 .formularios p {
   padding: 0.5em;
   font-size: calc(10px + 0.15vw)
+}
+.formularios form {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 form > input {
   max-width: 100%;

@@ -8,9 +8,7 @@
   </head>
   <body>
     <menu></menu>
-    <div>
-      <p id="resultado"></p>
-    </div>
+
     <div class="formularios" id="F-NMAP" style="display: none;">
       <div id="INFO-NMAP">
         <iframe src="https://nmap.org/man/es/man-briefoptions.html" width="100%" height="100%"></iframe>
@@ -105,7 +103,6 @@
         <button type="submit" name="button">Enviar</button>
       </form>
     </div>
-
       <div id="ataques">
         <div class="ataques">
           <h2>ESCANER DE RED</h2>
