@@ -168,7 +168,7 @@ menu{
   padding-bottom: 1.5em;
   color: aliceblue;
   font-family: monospace;
-  padding: 0 30em;
+  padding: 0 36em;
 }
 .formularios p {
   padding: 0.5em;
@@ -193,5 +193,10 @@ form > button {
   max-height: 100%;
 }
 
+@media (max-width: 1080px) {
+  .formularios {padding: 0 23em;}
+  form > input {padding: 0;}
+  form > button {padding: 5px;}
+}
 
 /* .hidden {visibility: hidden;} */

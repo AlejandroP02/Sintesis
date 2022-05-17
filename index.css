@@ -24,13 +24,14 @@
   width: 100%;
 }
 #fotos h2 {
-  top: 2.3em;
+  top: 2em;
   left: 50%;
   position: absolute;
   transform: translate(-50%, 10%);
 }
 #diagram {
-  border: 10px solid white;
+  border: 15px solid white;
+  border-top: 30px solid white;
   margin-bottom: 0.8em;
 }
 #fotos-grid {
@@ -52,4 +53,8 @@
   top: 1em;
   left: 50%;
   transform: translate(-50%, 10%);
+}
+
+@media (max-width: 1080px) {
+  #fotos h2 {position: absolute;top: 2.5em;}
 }
