@@ -9,7 +9,7 @@
   </head>
   <body>
     <menu></menu>
-      <h2>Uso de ataques</h2>
+      <!-- <h2>Uso de ataques</h2>
       <div id="ataques-man">
         <div class="contenedor-man-ataque">
           <h3>ESCANEO DE RED</h3>
@@ -24,13 +24,51 @@
           <h3>DNS SPOOFING</h3>
         </div>
         <div class="contenedor-man-ataque">
-          <h3>SMURF ATACK</h3>
+          <h3>SMURF ATTACK</h3>
         </div>
         <div class="contenedor-man-ataque">
           <h3>DHCP STARVATION</h3>
         </div>
-      </div>
+      </div> -->
+      <div id="Manual">
+        <h1>MANUAL DE USO</h1>
+        <ul id="manual-usuario" type="1">
+          <h2><li>INTRODUCCIÓN</li></h2>
+            <p>La pagina dispone de un software desarrollado, para poder realizar diferentes ataques a la red a la que se tenga accesos.</p>
+          <h2><li>REQUISITOS DEL SERVIDOR</li></h2>
+            <p>El servidor requiere varios recursos antes de poder realizar los ataques disponibles, los requisitos son los siguientes:</p>
+            <strong><dd>- php</dd></strong>
+            <strong><dd>- nmap</dd></strong>
+            <strong><dd>- python3 y python2</dd></strong>
+            <strong><dd>- python3-pip</dd></strong>
+            <strong><dd>- scapy</dd></strong>
+            <strong><dd>- NetfilterQueue</dd></strong>
+            <dd id="necesario">- build-essential<br>- python-dev<br>- libnetfilter-queue-dev</dd>
 
+            <h4>Como descargar los recursos necesarios:</h4>
+            <code>
+              <p>
+                sudo apt install php<br>
+                sudo apt install nmap<br>
+                sudo apt install python2<br>
+                sudo apt install python3<br>
+                sudo apt install python3-pip<br>
+                pip3 install scapy<br>
+                sudo apt install build-essential python-dev libnetfilter-queue-dev<br>
+                pip3 install netfilterqueue
+              </p>
+            </code>
+
+
+          <h2><li>USO DE ATAQUES</li></h2>
+            <h3><dd>- ESCANEO DE RED</dd></h3>
+            <h3><dd>- DDOS</dd></h3>
+            <h3><dd>- ARP SPOOFING</dd></h3>
+            <h3><dd>- DNS SPOOFING</dd></h3>
+            <h3><dd>- SMURF ATTACK</dd></h3>
+            <h3><dd>- DHCP STARVATION</dd></h3>
+        </ul>
+      </div>
     <footer></footer>
   </body>
   <script type="text/javascript" src="main.js"></script>

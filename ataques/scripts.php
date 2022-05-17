@@ -6,14 +6,14 @@
    if (isset($_POST['NMAP']))
    {
     // print_r($NMAP);
-     print(shell_exec($NMAP));
+     print_r(shell_exec($NMAP));
    }
 
    if(isset($_POST['NMAP-stop']))
      {
        shell_exec("kill -9 `pidof nmap`");
 
-
+     }
  ?>
 
 <?php
