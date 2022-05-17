@@ -93,6 +93,19 @@ function ataque_SMURF() {
  }
 }
 
+var DHCP = document.getElementById('DHCP');
+
+DHCP.addEventListener("click", ataque_DHCP);
+
+function ataque_DHCP() {
+  ocultarFormularios();
+  var Form_DHCP = document.getElementById('F-DHCP');
+  console.log(Form_DHCP.style.display);
+ if (Form_DHCP.style.display == 'none') {
+   Form_DHCP.style.display = 'block';
+ }
+}
+
 function ocultarFormularios() {
 
   var Form_NMAP = document.getElementById('F-NMAP');
@@ -105,7 +118,10 @@ function ocultarFormularios() {
   Form_DNSSPOOFING.style.display = 'none';
   var Form_SMURF = document.getElementById('F-SMURF');
   Form_SMURF.style.display = 'none';
+  var Form_DHCP = document.getElementById('F-DHCP');
+  Form_DHCP.style.display = 'none';
 }
+
 function ocultarEnvio(){
   var Cargar_NMAP = document.getElementById('carga');
   Cargar_NMAP.style.display = 'none';

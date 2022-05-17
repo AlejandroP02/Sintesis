@@ -86,6 +86,20 @@ function fetchNMAP () {
   return false;
 }
 
+function fetchcall4 () {
+  // (B1) GET FORM DATA
+  var data = new FormData(document.getElementById("SMURF-form"));
+
+  // (B2) FETCH
+  fetch("scripts.php", { method: "POST", body: data })
+  .then(res => res.text())
+  .then((txt) => {
+    console.log(txt);
+  })
+  .catch((err) => { console.error(err); });
+  return false;
+}
+
 function kill1 () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("ataque1"));
@@ -149,21 +163,6 @@ function kill4 () {
 function kill5 () {
   // (B1) GET FORM DATA
   var data = new FormData(document.getElementById("ataque5"));
-
-  // (B2) FETCH
-  fetch("scripts.php", { method: "POST", body: data })
-  .then(res => res.text())
-  .then((txt) => {
-    console.log(txt);
-    ocultarFormularios()
-  })
-  .catch((err) => { console.error(err); });
-  return false;
-}
-
-function kill6 () {
-  // (B1) GET FORM DATA
-  var data = new FormData(document.getElementById("ataque6"));
 
   // (B2) FETCH
   fetch("scripts.php", { method: "POST", body: data })
