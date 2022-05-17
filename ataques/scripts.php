@@ -9,6 +9,9 @@
      print(shell_exec($NMAP));
    }
 
+   if(isset($_POST['NMAP-stop']))
+     {
+       shell_exec("kill -9 `pidof nmap`");
 
 
  ?>
