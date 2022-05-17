@@ -154,8 +154,8 @@
           </form>
         </div>
         <div class="ataques">
-          <h2>DHCP Starvation</h2>
-          <p>Texto aleatorio XD.</p>
+          <h2>DHCP STARVATION</h2>
+          <p>Hacer uso del DHCP Starvation significa que el atacante quiere dejar un servidor DHCP sin servicio, y esti lo hace pidiendo todas las ips que puede ofrecer este DHCP.</p>
           <form class="boton" id="ataque5" action="scripts.php" method="post" onsubmit="return kill5();">
             <button id="DHCP" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Parar ataque</button>
