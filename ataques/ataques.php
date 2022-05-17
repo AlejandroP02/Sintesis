@@ -95,11 +95,11 @@
     <div class="formularios" id="F-DHCP" style="display: none;">
       <form id="DHCP-form" action="scripts.php" method="post" onsubmit="return fetchcall4();">
         <input type="hidden" name="DHCP" value="1">
-        <h2>SMURF ATTACK</h2>
+        <h2>DHCP STARVATION</h2>
         <p>Escriba la dirección de la red a la que atacara.</p>
         <input type="text" name="RED" placeholder="192.168.12.0/24">
         <br>
-        <p>Escriba su IP.</p>
+        <p>Escriba la IP del atacante.</p>
         <input type="text" name="IP-DHCP" placeholder="192.168.12.168">
         <br>
         <button type="submit" name="button">Enviar</button>

@@ -101,7 +101,7 @@
 
     // Use ls command to shell_exec
     // function
-     $DHCP = 'sudo python3 DHCP_Starvation.py '.$_POST['RED']." ".$_POST['IP-DHCP'];
+     $DHCP = 'sudo python3 scripts/DHCP_Starvation.py '.$_POST['RED']." ".$_POST['IP-DHCP'];
 
 
     if (isset($_POST['DHCP']))
