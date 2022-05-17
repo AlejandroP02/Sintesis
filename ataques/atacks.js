@@ -88,7 +88,7 @@ function fetchNMAP () {
 
 function fetchcall4 () {
   // (B1) GET FORM DATA
-  var data = new FormData(document.getElementById("SMURF-form"));
+  var data = new FormData(document.getElementById("DHCP-form"));
 
   // (B2) FETCH
   fetch("scripts.php", { method: "POST", body: data })
