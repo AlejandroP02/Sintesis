@@ -1,13 +1,23 @@
 #Manual {
+  position: relative;
   margin: 2em 3em;
   padding: 1em;
   background-color: #b1b3b2;
 }
+#logo-man {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  width: 3%;
+}
+
+
 #Manual h1 {
+  z-index: 2;
   margin: 1em;
   text-align: center;
 }
-
+#manual-usuario {z-index: 2;}
 #manual-usuario h2 {
   padding: 1em 0 0.5em 0;
 }
