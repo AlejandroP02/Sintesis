@@ -1,0 +1,17 @@
+#documentacion {
+  position: relative;
+  margin: 2em 3em;
+  padding: 1em;
+  background-color: #b1b3b2;
+}
+
+#documentacion h1 {
+  margin: 1em;
+  text-align: center;
+}
+#logo-man {
+  position: absolute;
+  right: 2em;
+  top: 2em;
+  width: 3%;
+}
