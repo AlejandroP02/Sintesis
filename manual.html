@@ -9,27 +9,6 @@
   </head>
   <body>
     <menu></menu>
-      <!-- <h2>Uso de ataques</h2>
-      <div id="ataques-man">
-        <div class="contenedor-man-ataque">
-          <h3>ESCANEO DE RED</h3>
-        </div>
-        <div class="contenedor-man-ataque">
-          <h3>DDOS</h3>
-        </div>
-        <div class="contenedor-man-ataque">
-          <h3>ARP SPOOFING</h3>
-        </div>
-        <div class="contenedor-man-ataque">
-          <h3>DNS SPOOFING</h3>
-        </div>
-        <div class="contenedor-man-ataque">
-          <h3>SMURF ATTACK</h3>
-        </div>
-        <div class="contenedor-man-ataque">
-          <h3>DHCP STARVATION</h3>
-        </div>
-      </div> -->
       <div id="Manual">
         <h1>MANUAL DE USO</h1>
         <ul id="manual-usuario" type="1">
@@ -75,37 +54,42 @@
             <h3><dd>- ESCANEO DE RED</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>A la hora de realizar el escaneo de red se debe tener en cuenta las opciones disponibles, y las diferencias que hay entre el ruido.</p><br>
+                <p>Las opciones a elegir se encuentran en la parte izquierda del formulario. La velocidad/ruido tiene 5 modos, que son los siguientes: </p>
+                <img src="imagenes/velocidad.jpg">
+                <p>Y por ultimo hay que añadir la red o el host donde deses realizar el escaneo.</p>
               </div>
             </dd>
             <h3><dd>- DDOS</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>Para poder realizar el ataque DDOS, solamente se requiere de la IP de la victima, el puerto del servicio que desees dejas inhabilitado, y la redundancia del ataque.</p>
+                <p>La redundancia del ataque se podria resumir en los paquetes por segundo que envia el ataque, cuantos mas paquetes, mas lenta ira la maquina.</p>
               </div>
             </dd>
             <h3><dd>- ARP SPOOFING</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>Este ataque reqiere de las IP's tanto de la victima, como la puerta de enlace.</p>
               </div>
             </dd>
             <h3><dd>- DNS SPOOFING</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>Si se quiere realizar este ataque se requerira que el ARP SPOOFING se haya utilizado con anterioridad, ya que sin el ARP SPOOFING activo, este ataque es imposible de realizar.</p>
+                <p>Los parametros que tiene este ataque son la dirección de la red que quieres suplantar (Que debe ser en http) y la IP a la que quieres que redirigirá.</p>
               </div>
             </dd>
             <h3><dd>- SMURF ATTACK</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>En los parametros del ataque en cuestion se requerira de la IP de una maquina que actuara como zombie, es decir, alguien que no sabe que esta atacando, y la ip de la victima.</p>
               </div>
             </dd>
             <h3><dd>- DHCP STARVATION</dd></h3>
             <dd>
               <div class="ataques">
-                <p>A</p>
+                <p>A la hora de realizar el DHCP STARVATION se necesita saber a que red deseas atacar, y tener a mano la IP de tu maquina.</p>
               </div>
             </dd>
         </ul>
