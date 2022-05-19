@@ -8,7 +8,10 @@
   </head>
   <body>
     <menu></menu>
-
+    <div id="titulo-ataques">
+      <h1>ATAQUES</h1>
+      <p>Aqui podremos utilizar los ataques con una interfaz grafica, hasta un usuario con el minimo de formación informatica podra lanzar distintos ataques.</p>
+    </div>
     <div class="formularios" id="F-NMAP" style="display: none;">
       <div id="INFO-NMAP">
         <iframe src="https://nmap.org/man/es/man-briefoptions.html" width="100%" height="100%"></iframe>

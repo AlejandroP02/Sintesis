@@ -33,6 +33,16 @@ menu{
   font-weight: bold;
   color: white;
 }
+#titulo-ataques {
+  text-align: center;
+  margin: 1em;
+}
+h2 {font-size: calc(0.4em + 1vw);}
+p {font-size: calc(0.1em + 1vw);}
+#titulo-ataques h1 {
+  margin-bottom: 0.5em;
+  font-size: calc(0.9em + 1vw);
+}
 #NMAP-form {
   position: relative;
   padding-bottom: 6em;
@@ -98,7 +108,7 @@ menu{
 #ataques {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3em 2em;
+  padding: 1em 2em;
 }
 .ataques {
   color: gold;
@@ -117,13 +127,14 @@ menu{
 }
 .ataques p {
   padding-top: 0.5em;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
 }
 .ataques form{
   margin-left: -1em;
   width: 100%;
   position: absolute;
   bottom: 0.5em;
+  font-size: calc(0.1em + 1vw)
 }
 .boton {
   padding-top: 0.5em;
