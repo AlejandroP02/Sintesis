@@ -21,17 +21,67 @@
             <p>Primero que todo hemos ejecutado minicom y mientras se encuentra conectando con el routers hemos pulsado la combinación de <span>ctrl+a+z<span> y saldria la siguiente ventana</p><br>
             <img src="imagenes/fab1.png"><br>
             <p>Una vez llegada a esa parte pulsamos la F y entramos en el modo rommon. En este modo debemos poner la siguiente linea y al reiniciar la maquina estara de fabrica.</p><br>
-            <img src="imagenes/fab2.png"><br>
+            <code>
+              <p>
+                monitor: command "boot" aborted due to user interrupt<br>
+                rommon 1 > confreg 0x2142
+              </p>
+            </code>
             <h4>Configuración comun</h4><br>
             <p>Una vez tenemos los routers de fabrica lo que haremos sera cambiar el hostname y la contraseña del router, además de añadir una linea sobre domain. Con esto ya configurado, solo nos quedaba guardarlo de la siguiente manera.</p><br>
-            <img src="imagenes/fab3.png"><br>
+            <code>
+              <p>
+                Cisco-1800#copy running-config nvram<br>
+                Destination filename [nvram]? cisco1800 <br>
+                %Warning:There is a file already existing with this name <br>
+                Do you want to over write? [confirm] <br>
+                <br>
+                827 bytes copied in 1.104 secs (749 bytes/sec)
+              </p>
+            </code>
           <h2><li>CONFIGURACION CISCO 1841</li></h2>
             <p>La configuración especial que tuvo el cisco 1841 en comparación al 2801 es la siguiente</p><br>
-            <img src="imagenes/cisco1841-1.png"><br>
+            <code>
+              <p>
+                Cicos-1800(config)#interface FastEthernet0/0 <br>
+                Cicos-1800(config-if)#ip address 192.168.12.214 255.255.255.0 <br>
+                Cicos-1800(config-if)#no shutdown <br>
+                Cicos-1800(config-if)#exit <br>
+                Cicos-1800(config)#interface FastEthernet0/1 <br>
+                Cicos-1800(config-if)#ip address 192.168.214.1 255.255.255.0 <br>
+                Cicos-1800(config-if)#no shutdown <br>
+                Cicos-1800(config-if)#exit <br>
+              </p>
+            </code>
+            <code>
+              <p>
+                Cicos-1800(config)#
+                Cicos-1800(config)#
+                Cicos-1800(config)#
+              </p>
+            </code>
             <img src="imagenes/cisco1841-2.png"><br>
           <h2><li>CONFIGURACION CISCO 2801</li></h2>
             <p>La configuración especial que tuvo el cisco 2801 en comparación al 1841 es la siguiente</p><br>
-            <img src="imagenes/cisco2801-1.png"><br>
+            <code>
+              <p>
+                Cicos-2800(config)#interface FastEthernet0/0 <br>
+                Cicos-2800(config-if)#ip address 192.168.210.2 255.255.255.0 <br>
+                Cicos-2800(config-if)#no shutdown <br>
+                Cicos-2800(config-if)#exit <br>
+                Cicos-2800(config)#interface FastEthernet0/1 <br>
+                Cicos-2800(config-if)#ip address 192.168.110.1 255.255.255.0 <br>
+                Cicos-2800(config-if)#no shutdown <br>
+                Cicos-2800(config-if)#exit <br>
+              </p>
+            </code>
+            <code>
+              <p>
+                Cicos-2800(config)#
+                Cicos-2800(config)#
+                Cicos-2800(config)#
+              </p>
+            </code>
             <img src="imagenes/cisco2801-2.png"><br>
           <h2><li>TESTEO DE RED</li></h2>
           <h2><li>BIBLIOGRAFIA</li></h2>
