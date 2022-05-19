@@ -109,7 +109,7 @@
       <div id="ataques">
         <div class="ataques">
           <h2>ESCANER DE RED</h2>
-          <p>Mediante el uso de NMAP se puede escanear la red de distintas formas. Por ello hay multiples parametros para escanear algo en especifico. Para ver todos los parametros que soporta use el boton de [Nombre del boton]</p>
+          <p>Mediante el uso de NMAP se puede escanear la red de distintas formas. Por ello hay multiples parametros para escanear algo en especifico. Estos parametros seran visibles a la izquierda del formulario.</p>
           <form class="boton" id="ataque1" action="scripts.php" method="post" onsubmit="return kill1();">
             <button id="NMAP" type="button" name="button">Atacar</button>
             <button type="submit" name="stop">Cerrar formulario</button>
