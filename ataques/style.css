@@ -5,6 +5,7 @@
 body {
   background-color: #C2CBCB;
   position: relative;
+  font-family: arial;
 }
 menu{
   padding: 0;
@@ -135,7 +136,7 @@ menu{
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #7D8889;
-  font-family: monospace;
+  font-family: monospace !important;
 }
 #licencias {
   position: absolute;

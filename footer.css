@@ -1,10 +1,11 @@
+
 #footer {
   position: relative;
   padding: 1.5em 6em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #7D8889;
-  font-family: monospace;
+  font-family: monospace !important;
 }
 #licencias {
   position: absolute;
@@ -17,6 +18,7 @@
 
 #menu-footer ul {
   list-style: none;
+  padding: 0;
 }
 
 #menu-footer a {

@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 body {
+  font-family: arial;
   background-color: #C2CBCB;
 }
 .relativo {position: relative;}

@@ -4,22 +4,40 @@
 }
 #portada h1 {
   padding: 0.5em;
+  font-size: calc(0.8em + 1vw);
+}
+#portada-img {
+  margin: 0 5em;
 }
 #portada-img img {
-  padding: 0 5em;
+
   max-width: 100%;
   width: 100%;
+
 }
-#resumen {
-  border: 2px solid black;
+.bordes {
+  border: 0.25em solid white;
+  border-radius: 0.5em;
+
+}
+.texto {
   margin: 2em 5em;
   text-align: justify;
+}
+.texto h2 {
+  font-size: calc(0.6em + 1vw);
+  line-height: 2em;
+}
+
+.texto p{
+  font-size: calc(0.1em + 1vw);
 }
 #fotos {
   position: relative;
   padding: 2em 5em;
 }
 #fotos img {
+
   max-width: 100%;
   width: 100%;
 }
@@ -36,17 +54,11 @@
 }
 #fotos-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0.8em;
 }
-#fotos-grid div {
 
-}
-#router1 {
-  padding-right: 0.5em;
-}
-#router2 {
-  padding-left: 0.5em;
-}
+
 
 .routers-nombre{
   position: absolute;
@@ -54,6 +66,7 @@
   left: 50%;
   transform: translate(-50%, 10%);
 }
+
 
 @media (max-width: 1080px) {
   #fotos h2 {position: absolute;top: 2.5em;}
