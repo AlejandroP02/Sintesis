@@ -35,3 +35,6 @@ menu{
   font-weight: bold;
   color: white;
 }
+.invisible {
+  visibility: hidden;
+}
