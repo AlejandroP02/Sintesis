@@ -54,9 +54,13 @@ code p {
 @media (max-width: 1080px) {
 .img-ataques{
   max-width: 100%;
-    width: 50%;
+    width: 70%;
 }
 .img-NMAP {
+  max-width: 100%;
+  width: 80%;
+}
+#tiempos {
   max-width: 100%;
   width: 70%;
 }
