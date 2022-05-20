@@ -210,6 +210,20 @@ form > button {
   .formularios {padding: 0 23em;}
   form > input {padding: 0;}
   form > button {padding: 5px;}
+  #menu-footer {
+    margin-top: 1em;
+  }
+  #menu-footer h4 {
+    margin-bottom: 0.5em;
+  }
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #menu li {
+    padding: 0.5em 0;
+    display: block;
+  }
 }
 
 /* .hidden {visibility: hidden;} */

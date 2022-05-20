@@ -24,6 +24,17 @@
 #menu-footer a {
   text-decoration: none;
   color: black;
+}
 
-
+@media (max-width: 1080px) {
+  #menu-footer {
+    margin-top: 1em;
+  }
+  #menu-footer h4 {
+    margin-bottom: 0.5em;
+  }
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

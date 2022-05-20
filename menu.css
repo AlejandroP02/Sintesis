@@ -38,3 +38,10 @@ menu{
 .invisible {
   visibility: hidden;
 }
+
+@media (max-width: 1080px) {
+  #menu li {
+    padding: 0.5em 0;
+    display: block;
+  }
+}

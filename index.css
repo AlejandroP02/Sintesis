@@ -70,4 +70,8 @@
 
 @media (max-width: 1080px) {
   #fotos h2 {position: absolute;top: 2.5em;}
+  #fotos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
