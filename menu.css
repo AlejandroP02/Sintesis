@@ -25,6 +25,7 @@ menu{
   padding: 0;
   text-align: center;
   padding: 2em 4em;
+  font-size: calc(0.2em + 0.9vw);
 }
 #menu li {
   padding: 0 15px;
