@@ -23,7 +23,7 @@
 dd {
   padding-left: 1em;
 }
-
+code {font-size: calc(0.1em + 0.5vw);}
 code span {
   color: white;
   background-color: black;
@@ -33,4 +33,10 @@ code p {
   margin: 0.5em 0;
   background-color: black;
   padding: 0.5em 0;
+}
+
+#minicom::after {
+  content: "";
+  clear: both;
+  display: table;
 }
