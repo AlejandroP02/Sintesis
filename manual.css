@@ -50,3 +50,14 @@ code p {
   max-width: 100%;
   width: 30%;
 }
+
+@media (max-width: 1080px) {
+.img-ataques{
+  max-width: 100%;
+    width: 50%;
+}
+.img-NMAP {
+  max-width: 100%;
+  width: 70%;
+}
+}
