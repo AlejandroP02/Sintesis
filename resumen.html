@@ -66,21 +66,21 @@
             <p>La configuración especial que tuvo el cisco 1841 en comparación al 2801 es la siguiente</p><br>
             <code>
               <p>
-                Cicos-1800(config)#interface FastEthernet0/0 <br>
-                Cicos-1800(config-if)#ip address 192.168.12.214 255.255.255.0 <br>
-                Cicos-1800(config-if)#no shutdown <br>
-                Cicos-1800(config-if)#exit <br>
-                Cicos-1800(config)#interface FastEthernet0/1 <br>
-                Cicos-1800(config-if)#ip address 192.168.214.1 255.255.255.0 <br>
-                Cicos-1800(config-if)#no shutdown <br>
-                Cicos-1800(config-if)#exit <br>
+                Cisco-1800(config)#interface FastEthernet0/0 <br>
+                Cisco-1800(config-if)#ip address 192.168.12.214 255.255.255.0 <br>
+                Cisco-1800(config-if)#no shutdown <br>
+                Cisco-1800(config-if)#exit <br>
+                Cisco-1800(config)#interface FastEthernet0/1 <br>
+                Cisco-1800(config-if)#ip address 192.168.214.1 255.255.255.0 <br>
+                Cisco-1800(config-if)#no shutdown <br>
+                Cisco-1800(config-if)#exit <br>
               </p>
             </code>
             <code>
               <p>
-                Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.214.2 <br>
-                Cicos-1800(config)#ip route 192.168.210.0 255.255.255.0 192.168.214.2 <br>
-                Cicos-1800(config)#ip route 192.168.110.0 255.255.255.0 192.168.214.2 <br>
+                Cisco-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.214.2 <br>
+                Cisco-1800(config)#ip route 192.168.210.0 255.255.255.0 192.168.214.2 <br>
+                Cisco-1800(config)#ip route 192.168.110.0 255.255.255.0 192.168.214.2 <br>
               </p>
             </code>
 
@@ -88,21 +88,21 @@
             <p>La configuración especial que tuvo el cisco 2801 en comparación al 1841 es la siguiente</p><br>
             <code>
               <p>
-                Cicos-2800(config)#interface FastEthernet0/0 <br>
-                Cicos-2800(config-if)#ip address 192.168.210.2 255.255.255.0 <br>
-                Cicos-2800(config-if)#no shutdown <br>
-                Cicos-2800(config-if)#exit <br>
-                Cicos-2800(config)#interface FastEthernet0/1 <br>
-                Cicos-2800(config-if)#ip address 192.168.110.1 255.255.255.0 <br>
-                Cicos-2800(config-if)#no shutdown <br>
-                Cicos-2800(config-if)#exit <br>
+                Cisco-2800(config)#interface FastEthernet0/0 <br>
+                Cisco-2800(config-if)#ip address 192.168.210.2 255.255.255.0 <br>
+                Cisco-2800(config-if)#no shutdown <br>
+                Cisco-2800(config-if)#exit <br>
+                Cisco-2800(config)#interface FastEthernet0/1 <br>
+                Cisco-2800(config-if)#ip address 192.168.110.1 255.255.255.0 <br>
+                Cisco-2800(config-if)#no shutdown <br>
+                Cisco-2800(config-if)#exit <br>
               </p>
             </code>
             <code>
               <p>
-                Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
-                Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
-                Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+                Cisco-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
+                Cisco-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
+                Cisco-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
               </p>
             </code>
 
@@ -115,9 +115,14 @@
           <p>Este problema era que en el Router 1841 no estaba configurada la NAT (Como pensabamos que venia de fabrica) y tuvimos que configurarlo de forma manual. La configuración que utilizamos fue la siguiente:</p> <br>
           <code>
             <p>
-              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
-              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
-              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+              Cisco-1800(config)#interface FastEthernet0/0 <br>
+              Cisco-1800(config-if)#ip nat outside <br>
+              Cisco-1800(config-if)#interface FastEthernet0/1 <br>
+              Cisco-1800(config-if)#ip nat inside <br>
+              Cisco-1800(config-if)#exit <br>
+              Cisco-1800(config)#access-list 1 permit any <br>
+              Cisco-1800(config)#ip nat inside source list 1 interface FastEthernet0/0 overload <br>
+              Cisco-1800(config)#exit <br>
             </p>
           </code>
 
@@ -126,9 +131,11 @@
           <p>Este fallo fue uno tonto, pues, nos faltaba añadir el Default Gateway tanto en el router, como en todos los demas dispositivos de red. Se debe añadir como una ruta de la siguiente manera</p> <br>
           <code>
             <p>
-              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
-              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
-              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+              Cisco-1800(config)#ip route 0.0.0.0 0.0.0.0 192.168.12.10 <br>
+              <br>
+              Cisco-2800(config)#ip route 0.0.0.0 0.0.0.0 192.168.210.1 <br>
+              <br>
+              ip route 0.0.0.0 0.0.0.0 192.168.214.1
             </p>
           </code>
 
@@ -136,9 +143,9 @@
           <p>Tras arreglar estos problemas realizamos multiples pings entre todos los dispositivos de la red para comprobar que todo funcionaba ya correctamente, y el resultado fue el siguiente:</p> <br>
           <code>
             <p>
-              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
-              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
-              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+              Cisco-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
+              Cisco-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
+              Cisco-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
             </p>
           </code>
 
