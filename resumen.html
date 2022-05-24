@@ -106,7 +106,42 @@
               </p>
             </code>
 
-          <h2><li>TESTEO DE RED</li></h2>
+          <h2><li>TESTEO DE RED</li></h2> <br>
+
+          <p>A la hora de realizar el testeo de las conexiones de nuestra red nos hemos tomado con un par de problemas, estos son:</p> <br>
+
+          <h4>La NAT inexistente</h4> <br>
+
+          <p>Este problema era que en el Router 1841 no estaba configurada la NAT (Como pensabamos que venia de fabrica) y tuvimos que configurarlo de forma manual. La configuración que utilizamos fue la siguiente:</p> <br>
+          <code>
+            <p>
+              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
+              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
+              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+            </p>
+          </code>
+
+          <h4>El gateway global</h4> <br>
+
+          <p>Este fallo fue uno tonto, pues, nos faltaba añadir el Default Gateway tanto en el router, como en todos los demas dispositivos de red. Se debe añadir como una ruta de la siguiente manera</p> <br>
+          <code>
+            <p>
+              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
+              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
+              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+            </p>
+          </code>
+
+          <h4>Comprobación final</h4> <br>
+          <p>Tras arreglar estos problemas realizamos multiples pings entre todos los dispositivos de la red para comprobar que todo funcionaba ya correctamente, y el resultado fue el siguiente:</p> <br>
+          <code>
+            <p>
+              Cicos-1800(config)#ip route 10.0.104.0 255.255.255.0 192.168.110.50 <br>
+              Cicos-1800(config)#ip route 192.168.12.0 255.255.255.0 192.168.210.1 <br>
+              Cicos-1800(config)#ip route 192.168.214.0 255.255.255.0 192.168.210.1 <br>
+            </p>
+          </code>
+
           <h2><li>BIBLIOGRAFIA</li></h2>
 
       </div>
