@@ -49,5 +49,9 @@ body {overflow-x: hidden;}
   top: 50%;
   padding: 1em;
   text-align: justify;
-
+}
+@media (max-width: 1080px) {
+  .autores {
+    animation: none;
+  }
 }
