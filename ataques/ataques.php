@@ -20,7 +20,7 @@
         <input type="hidden" name="NMAP" value="1">
         <h2>NMAP</h2>
         <p>Escribe la opción.</p>
-        <input type="text" name="OPCION" placeholder="-A, -O, -Sv...">
+        <input type="text" name="OPCION" placeholder="-A, -O, -sV...">
         <br>
         <p>Define la velocidad/ruido del escaneo.</p>
         <input type="text" name="VELOCIDAD" placeholder="-T5">
