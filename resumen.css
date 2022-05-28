@@ -72,5 +72,11 @@ code p {
   color: black;
   border: 2px solid grey;
   padding: 5px;
+  background-color: darkgrey;
+}
+#videos {
+  text-align: center;
   background-color: #d0cecb;
+  padding: 1em 2em;
+  border: 0.4em outset grey;
 }
